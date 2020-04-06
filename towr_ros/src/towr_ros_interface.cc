@@ -35,6 +35,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <xpp_msgs/topic_names.h>
 #include <xpp_msgs/TerrainInfo.h>
 
+#include <towr/models/kinematic_model.h>
 #include <towr/terrain/height_map.h>
 #include <towr/variables/euler_converter.h>
 #include <towr_ros/topic_names.h>
