@@ -15,14 +15,14 @@ public:
   {
     const double x_nominal_b = 0.133;
     const double y_nominal_b = 0.131;
-    const double z_nominal_b = -0.20;
+    const double z_nominal_b = -0.15;
 
     nominal_stance_.at(LF) <<  x_nominal_b,   y_nominal_b, z_nominal_b;
     nominal_stance_.at(RF) <<  x_nominal_b,  -y_nominal_b, z_nominal_b;
     nominal_stance_.at(LH) << -x_nominal_b,   y_nominal_b, z_nominal_b;
     nominal_stance_.at(RH) << -x_nominal_b,  -y_nominal_b, z_nominal_b;
 
-    max_dev_from_nominal_ << 0.25, 0.20, 0.10;
+    max_dev_from_nominal_ << 0.10, 0.05, 0.05;
   }
 };
 
@@ -32,7 +32,7 @@ public:
 class AstroDynamicModel : public SingleRigidBodyDynamics {
 public:
   AstroDynamicModel() : SingleRigidBodyDynamics(20,
-                      0.1826, 0.03903, 0.04894, 0.0, 0.0, 0.0,
+                      0.07538, 0.1611, 0.202, 0.0, 0.0, 0.0,
                       4) {}
 };
 
