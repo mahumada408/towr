@@ -13,9 +13,9 @@ class AstroKinematicModel : public KinematicModel {
 public:
   AstroKinematicModel () : KinematicModel(4)
   {
-    const double x_nominal_b = 0.133;
+    const double x_nominal_b = 0.19;
     const double y_nominal_b = 0.131;
-    const double z_nominal_b = -0.15;
+    const double z_nominal_b = -0.20;
 
     nominal_stance_.at(LF) <<  x_nominal_b,   y_nominal_b, z_nominal_b;
     nominal_stance_.at(RF) <<  x_nominal_b,  -y_nominal_b, z_nominal_b;
